@@ -1,0 +1,119 @@
+:root{
+    --primary-color: #fc9615;
+    --secundary-color: #bfcadc;
+    --tercary-color: #002752;
+    --skills-bar-length: 0%;
+}
+/* Tiny Carousel */
+#slider1 {
+    height: 1%;
+    margin: 30px auto;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+}
+
+#slider1 .viewport {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.flechita{
+    font-size: 35px;
+}
+#slider1 .buttons {
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;;
+}
+
+#slider1 .next {
+    right: 0;
+    left: auto;
+    top: 50%;
+}
+
+#slider1 .buttons:hover {
+    background: var(--tercary-color);
+}
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    gap: 20px;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+
+#slider1 .view__article {
+    float: left;
+    margin: 0 20px 0 0;
+    border: 1px solid #dcdcdc;
+    width: 25%;
+    position: relative;
+ }
+.view__article figure{
+    width: 100%;
+}
+.view__article figure img{
+    width: 100%;
+}
+#slider1 .chambeador{
+    padding: 5px 10px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+.view__texto{
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+}
+.view__texto div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.view__texto hr{
+    height: 15px;
+    width: 3px;
+    background-color: black;
+}
+@media screen and (max-width:430px) {
+    #slider1 {
+        width: 100%;
+    }
+    .view__article figure{
+        width: 250px;
+    }
+    #slider1 .viewport {
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .view__texto div{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

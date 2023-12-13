@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carrousel.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="slidefotos.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="tinycarousel.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b309ff7634.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="wow.min.js"></script>
+    <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slider1").tinycarousel();
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#slider").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+    <title>ProyectoFinal</title>
+  </head>
+  <body>
+    <header>
+      <section class="ancho cabecera">
+        <div>
+          <a href="#"><i class="fa-regular fa-envelope"></i>indo@example.com</a>
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i>1st Floor New World.</a
+          >
+          <a href="#"><i class="fa-solid fa-phone-flip"></i>+8800320432242</a>
+        </div>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </section>
+    </header>
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fa-solid fa-circle-up"></i>
+      </div>
+    </div>
+    <section class="menucab animate__animated animate__backInDown wow" id="menucab">
+      <div class="ancho">
+        <h1>Dreamit</h1>
+        <a href="#">
+          <figure>
+            <img src="/imagenes/logo.png" alt="" />
+          </figure>
+        </a>
+        <i id="iconomenu" class="fa-solid fa-bars"></i>
+        <nav>
+          <ul id="menu" class="tabs menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#cuerpo2">About</a></li>
+            <li><a href="#cuerpo3">Services</a></li>
+            <li><a href="#cuerpo4">Pages</a></li>
+            <li><a href="#cuerpo5">Blog</a></li>
+            <li><a href="#cuerpo6">Contact</a></li>
+            <li id="Btn2" class="botonget"><a href="#">Get A Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="callbacks_container">
+      <ul class="rslides" id="slider">
+        <li>
+          <img src="imagenes/slider1.jpg" alt="" />
+          <div class="caption">
+            <h4>WELCOME TO DREAMIT</h4>
+            <br />
+            <h2>Best Home Services Repairer Offers</h2>
+            <br />
+            <p>
+              Have a plumbing issue? Call 24 hour emergency services all time.
+            </p>
+            <br />
+            <div class="numer">
+              <div><i class="fa-solid fa-phone-flip"></i></div>
+              <h3>08801318254</h3>
+            </div>
+            <br />
+            <a href="#" class="botonna">Get Started</a>
+            <a href="#" class="botonba">Contact Us</a>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/slider2.jpg" alt="" />
+          <div class="caption">
+            <h4>WELCOME TO DREAMIT</h4>
+            <br />
+            <h2>Best Home Services Repairer Offers</h2>
+            <br />
+            <p>
+              Have a plumbing issue? Call 24 hour emergency services all time.
+            </p>
+            <br />
+            <div class="numer">
+              <div><i class="fa-solid fa-phone-flip"></i></div>
+              <h3>08801318254</h3>
+            </div>
+            <br />
+            <a href="#" class="botonna">Get Started</a>
+            <a href="#" class="botonba">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="cuerpo1 ancho">
+      <article class="servicios animate__animated animate__backInLeft wow animate__delay-1s">
+        <div class="serviciostext">
+          <div>
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <br />
+          <h3>Handyman</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            aut!
+          </p>
+        </div>
+        <div class="esquinaid"><i class="fa-solid fa-bus"></i></div>
+      </article>
+
+      <article class="servicios animate__animated animate__backInDown wow animate__delay-1s">
+        <div class="serviciostext">
+          <div>
+            <i class="fa-solid fa-plug-circle-bolt"></i>
+          </div>
+          <br />
+          <h3>Electrician</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            aut!
+          </p>
+        </div>
+        <div class="esquinaid">
+          <i class="fa-solid fa-plug-circle-bolt"></i>
+        </div>
+      </article>
+
+      <article class="servicios animate__animated animate__backInUp wow animate__delay-1s">
+        <div class="serviciostext">
+          <div>
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <br />
+          <h3>Plumer</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            aut!
+          </p>
+        </div>
+        <div class="esquinaid"><i class="fa-solid fa-wrench"></i></div>
+      </article>
+
+      <article class="servicios animate__animated animate__backInRight wow animate__delay-1s">
+        <div class="serviciostext">
+          <div>
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <br />
+          <h3>Carpenter</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            aut!
+          </p>
+        </div>
+        <div class="esquinaid"><i class="fa-solid fa-hammer"></i></div>
+      </article>
+    </section>
+    <section class="cuerpo2 ancho" id="cuerpo2">
+      <div class="aboutcuerpo2">
+        <div class="titysub">
+          <h3>ABOUT</h3>
+          <br />
+          <h2>20 Years Experience in The Handyman <span>& Plumer</span></h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+        <br />
+        <div class="parrafo">
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et nemo
+            quis sed omnis magni, distinctio minima explicabo similique
+            possimus! Eos, libero id! Animi?
+          </p>
+        </div>
+        <br />
+        <div class="aboutcuerpo2ser">
+          <div>
+            <i class="fa-solid fa-helmet-safety"></i>
+            <h3>The Best Quality Services</h3>
+          </div>
+          <div>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Warranty & Maintenance</h3>
+          </div>
+        </div>
+        <br />
+        <div>
+          <ul class="listauno animate__animated animate__bounceInLeft animate__delay-1s wow">
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <p>Praesent quis odio ait amet nisl luctus venenatis.</p>
+            </li>
+            <br />
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <p>Regular solution give for home problems by handyman.</p>
+            </li>
+            <br />
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <p>Office Desk and Floor Cleaning Services.</p>
+            </li>
+          </ul>
+          <br />
+          <br />
+        </div>
+        <a href="#" id="Btn" class="botonnab">About more</a>
+      </div>
+      <figure>
+        <img src="/imagenes/about.png" alt="" />
+      </figure>
+    </section>
+    <br />
+    <section class="cuerpo3" id="cuerpo3">
+      <div class="subcuerpo3">
+        <div class="titulocuerpo3">
+          <div class="titysub">
+            <h3>OUR SERVICES</h3>
+            <br />
+            <h2>We Provide One Of The Best Handyman <span>Services</span></h2>
+          </div>
+          <br />
+          <div class="barraanimada">
+            <div></div>
+          </div>
+        </div>
+        <br />
+        <div class="artservicios ancho">
+          <article class="artb animate__animated animate__bounceInDown wow animate__delay-1s">
+            <i class="fa-solid fa-lightbulb"></i>
+            <div>
+              <h3>Plumer Services</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+          <article class="artn animate__animated animate__bounceInDown wow animate__delay-1s">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <div>
+              <h3>Electrician Service</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+          <article class="artb animate__animated animate__bounceInDown wow animate__delay-1s">
+            <i class="fa-solid fa-paint-roller"></i>
+            <div>
+              <h3>Painter Services</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+          <article class="artn animate__animated animate__bounceInUp wow animate__delay-1s">
+            <i class="fa-solid fa-hammer"></i>
+            <div>
+              <h3>Carpenter Service</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+          <article class="artb animate__animated animate__bounceInUp wow animate__delay-1s">
+            <i class="fa-solid fa-broom"></i>
+            <div>
+              <h3>Cleaning Services</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+          <article class="artn animate__animated animate__bounceInUp wow animate__delay-1s">
+            <i class="fa-solid fa-people-roof"></i>
+            <div>
+              <h3>Roof Services</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="cuerpo4 ancho">
+      <figure>
+        <img src="/imagenes/choose.jpg" alt="" />
+      </figure>
+      <div class="subcuerpo4">
+        <div class="titysub">
+          <h3>WHY CHOOSE US</h3>
+          <br />
+          <h2>Offer Reliable Services For Most Mome <span>Services</span></h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+        <br />
+        <div class="parrafo">
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et nemo
+            quis sed omnis magni, distinctio minima explicabo similique
+            possimus! Eos, libero id! Animi?
+          </p>
+        </div>
+        <br />
+        <div class="skills">
+          <div class="skills__item">
+            <p>Handyman Experience</p>
+            <p>96%</p>
+            <div class="skills__bar skills__bar--96"></div>
+          </div>
+          <div class="skills__item">
+            <p>Plumbing Experience</p>
+            <p>91%</p>
+            <div class="skills__bar skills__bar--91"></div>
+          </div>
+          <div class="skills__item">
+            <p>Industrie Experience</p>
+            <p>85%</p>
+            <div class="skills__bar skills__bar--85"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cuerpo5" id="cuerpo4">
+      <div class="subcuerpo5">
+        <div class="titysub">
+          <h3>CASE STUDY WORK</h3>
+          <br />
+          <h2>Handyman Best Work & Solution Project</h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+      </div>
+      <div id="carousel" class="carousel1">
+        <div id="slide-container">
+          <article class="slide" data-slideIndex="0">
+            <figure>
+              <img src="imagenes/carrousel1.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Plumbing Services</h2>
+              <br />
+              <p>Plumbing</p>
+            </div>
+          </article>
+          <article class="slide" data-slideIndex="1">
+            <figure>
+              <img src="imagenes/carrousel2.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Electrical Repair</h2>
+              <br />
+              <p>Electrician</p>
+            </div>
+          </article>
+          <article class="slide" data-slideIndex="2">
+            <figure>
+              <img src="imagenes/carrousel3.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Industries Solution</h2>
+              <br />
+              <p>Construction</p>
+            </div>
+          </article>
+          <article class="slide" data-slideIndex="3">
+            <figure>
+              <img src="imagenes/carrousel4.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Handyman Services</h2>
+              <br />
+              <p>Handyman</p>
+            </div>
+          </article>
+          <article class="slide" data-slideIndex="4">
+            <figure>
+              <img src="imagenes/carrousel5.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Cleaning Repair Clean</h2>
+              <br />
+              <p>Repair</p>
+            </div>
+          </article>
+          <article class="slide" data-slideIndex="5">
+            <figure>
+              <img src="imagenes/carrousel6.jpg" alt="" />
+            </figure>
+            <div>
+              <h2>Construction Marketing</h2>
+              <br />
+              <p>Construction</p>
+            </div>
+          </article>
+        </div>
+        <div class="slide-buttons">
+          <a href="#" id="back-button" class="backward arrow"><<</a>
+          <a href="#" id="forward-button" class="forward arrow">>></a>
+        </div>
+        <div class="slide-indicators">
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+        </div>
+      </div>
+    </section>
+    <section class="cuerpo6 ancho">
+      <div class="cuadrados">
+        <div class="cuadradon">
+          <i class="fa-solid fa-helmet-safety"></i>
+          <br />
+          <h2>3641</h2>
+          <br />
+          <p>Complete Project</p>
+        </div>
+        <div class="cuadradog">
+          <i class="fa-solid fa-person-circle-check"></i>
+          <br />
+          <h2>256</h2>
+          <br />
+          <p>Client Satisfied</p>
+        </div>
+        <div class="cuadradog">
+          <i class="fa-solid fa-award"></i>
+          <br />
+          <h2>265</h2>
+          <br />
+          <p>Complete Award</p>
+        </div>
+        <div class="cuadradon">
+          <i class="fa-solid fa-face-smile-beam"></i>
+          <br />
+          <h2>2451</h2>
+          <br />
+          <p>Happy Client</p>
+        </div>
+      </div>
+      <div class="subcuerpo6">
+        <div class="titysub">
+          <h3>DREAMIT COMPANY</h3>
+          <br />
+          <h2>Our Company Is At Your Service At <span>All Times</span></h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+        <br />
+        <div class="parrafo animate__animated animate__bounceInLeft wow">
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+            tempore sequi laudantium labore, saepe, nisi cupiditate inventore
+            temporibus placeat debitis nemo sapiente tenetur voluptatum.
+          </p>
+        </div>
+        <br />
+        <ul class="listauno">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Quisquam, mollitia temporibus? Incidunt suscipit cumque
+              consequuntur.
+            </p>
+          </li>
+          <br />
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Quisquam, mollitia temporibus? Incidunt suscipit cumque
+              consequuntur.
+            </p>
+          </li>
+          <br />
+        </ul>
+        <br />
+        <a href="#" id="Btn" class="botonnab">About more</a>
+      </div>
+    </section>
+    <section class="cuerpo7">
+      <div class="subcuerpo7">
+        <div class="cab__subcuerpo7">
+          <div class="ancho">
+            <div class="titysub">
+              <h3>OUR TEAM</h3>
+              <br />
+              <h2>Our Motivated Skilled Experience Team</h2>
+            </div>
+            <br />
+            <a href="#" id="Btn2" class="botonnab">All Team Member</a>
+          </div>
+        </div>
+      </div>
+      <div class="equipo ancho">
+        <article>
+          <figure>
+            <img src="imagenes/team1.jpg" alt="" />
+            <div class="pantallan"></div>
+          </figure>
+          <br />
+          <a href="#">Hossen Babu Orfe</a>
+          <p>WEB DEVELOPER</p>
+          <div class="equipoico">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <br />
+        </article>
+        <article>
+          <figure>
+            <img src="imagenes/team2.jpg" alt="" />
+            <div class="pantallan"></div>
+          </figure>
+          <br />
+          <a href="#">Mostofa Kamal</a>
+          <p>CLEANING REPAIR</p>
+          <div class="equipoico">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <br />
+        </article>
+        <article>
+          <figure>
+            <img src="imagenes/team3.jpg" alt="" />
+            <div class="pantallan"></div>
+          </figure>
+          <br />
+          <a href="#">Mehedi Hassan Raj</a>
+          <p>ELECTRICAL</p>
+          <div class="equipoico">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <br />
+        </article>
+      </div>
+    </section>
+    <section class="divisor ancho">
+      <div class="titysub">
+        <h3>OUR CLIENTS TESTIMONIALS</h3>
+        <br />
+        <h2>What People Say For Your Happy Client</h2>
+      </div>
+      <br />
+      <div class="barraanimada">
+        <div></div>
+      </div>
+    </section>
+    <section class="cuerpo8 ancho">
+      <div id="carousel" class="carousel2">
+        <div id="slide-container">
+          <article class="slide2" data-slideIndex="0">
+            <div class="slide__parrafo">
+              <div class="slide__ico">
+                <hr />
+                <div><i class="fa-solid fa-quote-left"></i></div>
+                <hr />
+              </div>
+              <br />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                quia ipsa, error mollitia ex, culpa ad odit nisi laboriosam
+                perspiciatis explicabo dolor sit at architecto libero sunt eius!
+                Nihil, eius.
+              </p>
+            </div>
+            <div class="slide__bottom">
+              <figure>
+                <img src="imagenes/testi1.jpg" alt="" />
+              </figure>
+              <br />
+              <h3>Anowar Hossain</h3>
+              <p>Repair Service</p>
+            </div>
+          </article>
+          <article class="slide2" data-slideIndex="1">
+            <div class="slide__parrafo">
+              <div class="slide__ico">
+                <hr />
+                <div><i class="fa-solid fa-quote-left"></i></div>
+                <hr />
+              </div>
+              <br />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                quia ipsa, error mollitia ex, culpa ad odit nisi laboriosam
+                perspiciatis explicabo dolor sit at architecto libero sunt eius!
+                Nihil, eius.
+              </p>
+            </div>
+            <div class="slide__bottom">
+              <figure>
+                <img src="imagenes/testi2.jpg" alt="" />
+              </figure>
+              <br />
+              <h3>Mehedi Hossan</h3>
+              <p>Electrical</p>
+            </div>
+          </article>
+          <article class="slide2" data-slideIndex="2">
+            <div class="slide__parrafo">
+              <div class="slide__ico">
+                <hr />
+                <div><i class="fa-solid fa-quote-left"></i></div>
+                <hr />
+              </div>
+              <br />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                quia ipsa, error mollitia ex, culpa ad odit nisi laboriosam
+                perspiciatis explicabo dolor sit at architecto libero sunt eius!
+                Nihil, eius.
+              </p>
+            </div>
+            <div class="slide__bottom">
+              <figure>
+                <img src="imagenes/testi3.jpg" alt="" />
+              </figure>
+              <br />
+              <h3>Hossen Babu Orfe</h3>
+              <p>Cleaning</p>
+            </div>
+          </article>
+        </div>
+        <div class="slide-buttons">
+          <a href="#" id="back-button" class="backward arrow"><<</a>
+          <a href="#" id="forward-button" class="forward arrow">>></a>
+        </div>
+        <div class="slide-indicators">
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+          <div class="slide-indicator"></div>
+        </div>
+      </div>
+    </section>
+    <section class="cuerpo9" id="cuerpo5">
+      <div class="divisor">
+        <div class="titysub">
+          <h3>OUR BLOG</h3>
+          <br />
+          <h2>Our Latest Newspaper & Handyman <span>Articles</span></h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+      </div>
+      <div id="slider1">
+        <a class="buttons prev" href="#"
+          ><i class="flechita fa-solid fa-arrow-left"></i
+        ></a>
+        <div class="viewport">
+          <ul class="overview">
+            <li class="view__article">
+              <a href="#"
+                ><figure><img src="imagenes/blog1.jpg" alt="" /></figure
+              ></a>
+              <div class="chambeador"><p>PLUMBING</p></div>
+              <div class="view__texto">
+                <div>
+                  <p>Dit-Handyman</p>
+                  <hr />
+                  <p>July 10,2021</p>
+                </div>
+                <br />
+                <h3>When have a problem with Cracked Pipes</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Optio quibusdam ex fuga.
+                </p>
+              </div>
+            </li>
+            <li class="view__article">
+              <a href="#"
+                ><figure><img src="imagenes/blog2.jpg" alt="" /></figure
+              ></a>
+              <div class="chambeador"><p>ELECTRICIAN</p></div>
+              <div class="view__texto">
+                <div>
+                  <p>Dit-Handyman</p>
+                  <hr />
+                  <p>July 10,2021</p>
+                </div>
+                <br />
+                <h3>The reason behind Power Outlets are Sparking</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Optio quibusdam ex fuga.
+                </p>
+              </div>
+            </li>
+            <li class="view__article">
+              <a href="#"
+                ><figure><img src="imagenes/blog3.jpg" alt="" /></figure
+              ></a>
+              <div class="chambeador"><p>HANDYMAN</p></div>
+              <div class="view__texto">
+                <div>
+                  <p>Dit-Handyman</p>
+                  <hr />
+                  <p>July 10,2021</p>
+                </div>
+                <br />
+                <h3>When have a problem with Cracked Pipes</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Optio quibusdam ex fuga.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="buttons next" href="#"
+          ><i class="flechita fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+      <div class="slide-indicators">
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+      </div>
+    </section>
+    <section id="modal" class="fondomodal">
+      <div class="contenidomodal">
+        <div class="modal__titulo">
+          <div class="titysub">
+            <h3>CONTACT US</h3>
+            <br />
+            <h2>Feel Free Contact <span>Now Us</span></h2>
+          </div>
+          <br />
+          <div class="barraanimada">
+            <div></div>
+          </div>
+        </div>
+        <fieldset class="forms">
+          <input type="text" placeholder="Your Name" /> <br /><br />
+          <input type="text" placeholder="Your Email" /> <br /><br />
+          <input type="text" placeholder="Your Phone" /> <br /><br />
+          <input type="text" placeholder="Subject" /> <br /><br />
+          <input class="forms__message" type="text" placeholder="Message" />
+          <br /><br />
+        </fieldset>
+        <a href="" class="btn-form">Send Message</a>
+      </div>
+      <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+    </section>
+    <section id="modal2" class="fondomodal2">
+      <div class="contenidomodal2">
+        <div class="modal__titulo2">
+          <div class="titysub">
+            <h3>Video Demostration</h3>
+            <br />
+            <h2>Isshin <span>Ashina</span></h2>
+          </div>
+          <br />
+          <div class="barraanimada">
+            <div></div>
+          </div>
+        </div>
+        <div class="popup__modal">
+          <iframe
+            src="https://www.youtube.com/embed/WEwFpaL6X3w?si=diE-BQGWnqY1Yfe_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <i id="cerrarbtn2" class="cerrarmodal fas fa-times-circle"></i>
+    </section>
+    <section class="divisor ancho">
+      <div class="titysub">
+        <h3>MEMBERS</h3>
+        <br />
+        <h2>Names of Our <span>Member</span></h2>
+      </div>
+      <br />
+      <div class="barraanimada">
+        <div></div>
+      </div>
+    </section>
+    <section id="galeria" class="cuerpo10 ancho">
+      <a
+        href="imagenes/team1.jpg"
+        class="fancybox"
+        title="Michael Chains"
+        rel="gallery1"
+      >
+        <img src="imagenes/team1.jpg" alt="" />
+      </a>
+      <a
+        href="imagenes/team2.jpg"
+        class="fancybox"
+        title="Joshua Gibson"
+        rel="gallery1"
+      >
+        <img src="imagenes/team2.jpg" alt="" />
+      </a>
+      <a
+        href="imagenes/team3.jpg"
+        class="fancybox"
+        title="Fernidand Moo"
+        rel="gallery1"
+      >
+        <img src="imagenes/team3.jpg" alt="" />
+      </a>
+    </section>
+    <section class="cuerpo11 ancho">
+      <div class="subcuerpo11">
+        <div class="titysub">
+          <h3>Works</h3>
+          <br />
+          <h2>Explications <span>Tellers</span></h2>
+        </div>
+        <br />
+        <div class="barraanimada">
+          <div></div>
+        </div>
+      </div>
+      <div class="acordeon__padre">
+        <div class="acordeon">
+          <div class="acordeon_titulo titulo1">
+            <h2>Hardwood Flooring</h2>
+            <i class="icono1 rotar fa-solid fa-circle-arrow-down"></i>
+          </div>
+          <div class="acordeon_contenido contenido1">
+            <figure>
+              <img src="imagenes/pt1.jpg" alt="" />
+            </figure>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              doloremque laborum necessitatibus officiis doloribus, voluptates
+              natus, fuga eaque corporis libero beatae fugiat, suscipit incidunt
+              veniam quod quam repellendus sapiente unde.
+            </p>
+          </div>
+        </div>
+        <div class="acordeon">
+          <div class="acordeon_titulo titulo2">
+            <h2>Fireplace Cleaning</h2>
+            <i class="icono2 rotar fa-solid fa-circle-arrow-down"></i>
+          </div>
+          <div class="acordeon_contenido contenido2">
+            <figure>
+              <img src="imagenes/pt2.jpg" alt="" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              ex, eligendi. Iste, beatae error magni a sequi sit voluptatum
+              obcaecati recusandae, nisi ipsa laboriosam vero cupiditate vel
+              molestiae reiciendis itaque Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Vel ipsa quisquam accusamus porro
+              quos, ipsam, enim eius ex hic harum eligendi, inventore ducimus
+              aspernatur repellendus eveniet sequi sint autem iste.
+            </p>
+          </div>
+        </div>
+        <div class="acordeon">
+          <div class="acordeon_titulo titulo3">
+            <h2>Handmade Furniture</h2>
+            <i class="icono3 rotar fa-solid fa-circle-arrow-down"></i>
+          </div>
+
+          <div class="acordeon_contenido contenido3">
+            <figure>
+              <img src="imagenes/pt3.jpg" alt="" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              ex, eligendi. Iste, beatae error magni a sequi sit voluptatum
+              obcaecati recusandae, nisi ipsa laboriosam vero cupiditate vel
+              molestiae reiciendis itaque Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Vel ipsa quisquam accusamus porro
+              quos, ipsam, enim eius ex hic harum eligendi, inventore ducimus
+              aspernatur repellendus eveniet sequi sint autem iste.
+            </p>
+          </div>
+        </div>
+        <div class="acordeon">
+          <div class="acordeon_titulo titulo4">
+            <h2>Kitchen Renovation</h2>
+            <i class="icono4 rotar fa-solid fa-circle-arrow-down"></i>
+          </div>
+
+          <div class="acordeon_contenido contenido4">
+            <figure>
+              <img src="imagenes/pt4.jpg" alt="" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              ex, eligendi. Iste, beatae error magni a sequi sit voluptatum
+              obcaecati recusandae, nisi ipsa laboriosam vero cupiditate vel
+              molestiae reiciendis itaque Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Vel ipsa quisquam accusamus porro
+              quos, ipsam, enim eius ex hic harum eligendi, inventore ducimus
+              aspernatur repellendus eveniet sequi sint autem iste.
+            </p>
+          </div>
+        </div>
+        <div class="acordeon">
+          <div class="acordeon_titulo titulo5">
+            <h2>Commercial Building</h2>
+            <i class="icono5 rotar fa-solid fa-circle-arrow-down"></i>
+          </div>
+
+          <div class="acordeon_contenido contenido5">
+            <figure>
+              <img src="imagenes/pt5.jpg" alt="" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              ex, eligendi. Iste, beatae error magni a sequi sit voluptatum
+              obcaecati recusandae, nisi ipsa laboriosam vero cupiditate vel
+              molestiae reiciendis itaque Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Vel ipsa quisquam accusamus porro
+              quos, ipsam, enim eius ex hic harum eligendi, inventore ducimus
+              aspernatur repellendus eveniet sequi sint autem iste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bottom_foot ancho" id="cuerpo6">
+        <div class="div1">
+          <figure><img src="imagenes/logo_blanco.png" alt="" /></figure>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            deserunt aspernatur debitis?
+          </p>
+          <br />
+          <div class="equipoico">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="div2">
+          <h2>Our Service</h2>
+          <br />
+          <ul>
+            <li><a href="#">Our Services</a></li>
+            <br />
+            <li><a href="#">Electrician Services</a></li>
+            <br />
+            <li><a href="#">Handyman Service</a></li>
+            <br />
+            <li><a href="#">Pluming Services</a></li>
+            <br />
+            <li><a href="#">Repair Services</a></li>
+          </ul>
+        </div>
+        <div class="div3">
+          <h2>Recent Post</h2>
+          <br />
+          <div>
+            <figure><img src="imagenes/blog1.jpg" alt="" /></figure>
+            <div>
+              <a href="#">Plumbing Tips For Winter and summer</a>
+              <br />
+              <p>10 july, 2021</p>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div>
+            <figure><img src="imagenes/blog2.jpg" alt="" /></figure>
+            <div>
+              <a href="#">Equipping Researches in the Developing</a>
+              <br />
+              <p>10 july, 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="div4">
+          <h2>Quick Contact</h2>
+          <br />
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <p>
+              <b>Address:</b><br />
+              Dhaka, Bangladesh Road 22
+            </p>
+          </div>
+          <br />
+          <div>
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>
+              <b>Tellphone:</b><br />
+              088 4785 6589
+            </p>
+          </div>
+          <br />
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <p>
+              <b>Email:</b><br />
+              info@example.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="creditos ancho">
+        <hr />
+        <br />
+        <p>Miguel Francisco Cadenas Tejeda</p>
+        <br />
+        <p>9ST</p>
+        <br />
+        <p>Desarrollo Frontend</p>
+      </div>
+    </footer>
+  </body>
+  <script src="carrousel.js"></script>
+  <script src="menu.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>
